@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Child.css";
 
-function Selection({ applyColor }) {
+export default function Selection({ applyColor }) {
   let [color, setColor] = useState({ background: "" });
   return (
     <div className="fix-box" style={color} onClick={() => applyColor(setColor)}>
@@ -9,5 +9,3 @@ function Selection({ applyColor }) {
     </div>
   );
 }
-
-export default Selection;
